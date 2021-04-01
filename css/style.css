@@ -26,6 +26,8 @@ img {
     line-height: 42px;
 }
 
+
+
 .section {
     padding-top: 64px;
     padding-bottom: 92px;
@@ -46,6 +48,10 @@ img {
 
 .social-link {
     margin-left: 20px;
+}
+
+.social-link:first-child {
+    margin-left: 0;
 }
 
 .hero-content {
@@ -87,6 +93,20 @@ img {
     line-height: 14px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-text {
+    animation: move 4s 0s;
 }
 
 .hero-avatar {
@@ -136,4 +156,103 @@ img {
     font-size: 16px;
     line-height: 28px;
     margin: 0;
+}
+
+
+
+/* contacts */
+
+.contacts-form {
+    background-color: #fff;
+    box-shadow: -5px 5px 0px #ffc41d;
+    border-radius: 5px;
+    max-width: 380px;
+    padding: 40px 48px 48px 48px;
+}
+
+.form-title {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.input {
+    background: #f8f8f8;
+    border: none;
+    box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+    border-radius: 5px;
+    padding: 18px 20px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.input-name {
+    margin-bottom: 17px;
+}
+
+.input-phone {
+    margin-bottom: 29px;
+}
+
+.form-button {
+    width: 100%;
+    cursor: pointer;
+}
+
+.contacts-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-text {
+    flex-basis: 50%;
+}
+
+.contacts-data {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+}
+
+.contacts-phone,
+.contacts-mail {
+    flex-basis: 50%;
+    margin-bottom: 53px;
+}
+
+.contacts-social {
+    flex-basis: 100%;
+}
+
+.contacts-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.contacts-link {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 37px;
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contacts-policy {
+    display: inline-block;
+    margin-top: 72px;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: #a5a5a5;
 }
