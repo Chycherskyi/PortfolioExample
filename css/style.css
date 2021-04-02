@@ -360,4 +360,8 @@ img {
         order: 1;
         text-align: center;
     }
+
+    .features-item {
+        flex-basis: 45%;
+    }
 }
